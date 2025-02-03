@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 
 app = Flask(__name__)
 
-BOT_TOKEN = '6746051091:AAH6HhI_yWVoG_ZFvbAsr7vYhENcLnMqq0w'
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 INGREDIENTS = [['1', 'guruch', 'ingredient 1'], ['2', 'sabzi', 'ingredient 2'],
                ['3', 'piyoz', 'ingredient 3'], ['4', 'sarimsoq', 'ingredient 4'],
                ['5', "o'simlik yog'i", 'ingredient 5'], ['6', "go'sht", 'ingredient 6'],
