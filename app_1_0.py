@@ -6,7 +6,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-BOT_TOKEN = '6702944224:AAHJdf0gNajVL5c8O7ELYdQ30aXCtd0rNLE'
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 RECIPE = {
     "odatiy": {
         "Osh Palov (Plov)": {
